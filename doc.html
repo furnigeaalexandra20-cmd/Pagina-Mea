@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Mea Web</title>
+    <style>
+        /* ==== CSS ==== */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+        }
+
+        header {
+            background: #4a76fd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .container {
+            margin: 30px auto;
+            max-width: 800px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #4a76fd;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #355dd8;
+        }
+
+        #mesaj {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Pagina Web cu HTML, CSS și JavaScript
+</header>
+
+<div class="container">
+    <h2>Bun venit!</h2>
+    <p>Aceasta este o pagină simplă creată în HTML, stilizată cu CSS și interactivă datorită JavaScript-ului.</p>
+
+    <button onclick="afiseazaMesaj()">Apasă-mă</button>
+
+    <div id="mesaj"></div>
+</div>
+
+<script>
+    // ==== JavaScript ====
+    function afiseazaMesaj() {
+        const mesaj = document.getElementById("mesaj");
+        mesaj.innerHTML = "Salut! Acesta este un mesaj generat cu JavaScript 😊";
+    }
+</script>
+
+</body>
+</html>
